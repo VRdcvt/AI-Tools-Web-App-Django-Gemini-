@@ -1,0 +1,10 @@
+{% extends 'ai_tools/base.html' %}
+
+{% block content %}
+<h2>Генерация описания объявления</h2>
+<form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Сгенерировать</button>
+</form>
+{% if description %}<p><strong>Результат:</strong> {{ description }}</p>{% endif %}
+{% endblock %}
