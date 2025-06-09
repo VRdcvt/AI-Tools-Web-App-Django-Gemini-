@@ -49,8 +49,7 @@ python -m venv venv
 source venv/bin/activate  # или venv\\Scripts\\activate на Windows
 pip install -r requirements.txt
 ```
-Создай файл .env и добавь в него ключ Gemini или OpenAI:
-GEMINI_API_KEY=your_api_key_here
+Переименуй файл .env.example в .env и добавь в него ключ Gemini или OpenAI.
 
 ## ▶ Запуск
 ```bash
